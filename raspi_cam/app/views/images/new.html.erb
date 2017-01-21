@@ -1,0 +1,5 @@
+<%= form_for @image do |f|%>
+  <%= f.file_field :image, multiple: false %>
+  <%= f.submit %>
+<%end%>
+<%= button_to 'raspi_photo', raspi_photo_path, method: 'get'%>
